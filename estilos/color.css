@@ -1,0 +1,269 @@
+/* inicio navegacion  */
+.navbar {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: #000 !important;
+    font-size: 18pt;
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+    margin: 0 10px !important;
+    padding: 0 8px;
+    transition: all 0.3s;
+}
+
+.links-nav ul li a:hover {
+    border-bottom: 2px rgb(255, 77, 77) solid;
+    transform: scale(1.07);
+}
+
+.navbar-brand {
+    color: #000 !important;
+    font-size: 25pt;
+}
+
+.navbar-brand span {
+    color: red;
+    font-size: 25pt;
+}
+
+/* fin navegacion  */
+
+/* cartel 10% de descuento inicio */
+.fondo-header-index {
+    background-image: url("../assents/accesorios-oversize.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 1000px;
+    padding: 170px 0 0 100px;
+    border-radius: 0px !important;
+}
+
+.titulo {
+    font-size: 200px;
+    color: rgba(255, 0, 0, 0.679);
+    margin: 0;
+}
+
+.titulo span {
+    font-size: 140px;
+    color: rgba(221, 221, 221, 0.8);
+}
+
+.mensaje_descuento {
+    font-size: 60px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgba(221, 221, 221, 0.8);
+}
+
+/* cartel 10% de descuento fin */
+
+/* tarjetas pendas destacadas inicio */
+
+.contenedora_destacados {
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 200px 0;
+}
+
+.titulo_destacado h3 {
+    font-size: 50pt;
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+    padding: 0 30px;
+    color: #ffffffbe;
+}
+
+.linea_destacados {
+    background-color: #ff000072;
+    height: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 50px;
+}
+
+.contenedor_tarjetas {
+    display: flex;
+    min-width: 1400px;
+    width: 80%;
+    /* background-color: aqua; */
+    margin-top: 90px;
+}
+
+.img_des {
+    height: 450px;
+    object-fit: cover;
+}
+
+.BOTON_comprar {
+    background-color: rgba(255, 0, 0, 0.782);
+    border: none;
+    transition: all 0.3s;
+}
+
+.BOTON_comprar:hover {
+    background-color: rgba(217, 7, 7, 0.697);
+    transform: scale(1.05);
+}
+
+/* footer */
+
+footer {
+    background-color: #111111;
+    color: #fff;
+    /* height: 100px; */
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .redes a {
+    color: rgba(134, 0, 0, 0.532);
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
+/* footer */
+
+/* tarjetas pendas destacadas fin */
+
+/* inicio media*/
+
+/* Estilo para tablets (entre 768px y 991px) */
+@media (min-width: 576px) and (max-width: 991px) {
+    .navbar-nav {
+        display: none;
+        /* Oculta la lista de enlaces en tablets */
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        font-size: 1.5em;
+        /* Cambia el tamaño del icono de la hamburguesa a 1.5em */
+    }
+
+    .contenedor_navv {
+        padding-right: 1rem;
+        /* Agrega espacio a la derecha del botón de la hamburguesa para separarlo del borde */
+    }
+}
+
+@media only screen and (max-width: 392px) {
+
+    /* nav */
+    .contenedor_navv {
+        padding: 0 0px !important;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
+
+    .titulo span {
+        font-size: 40px;
+    }
+
+    .mensaje_descuento {
+        font-size: 10pt;
+    }
+
+    .fondo-header-index {
+        padding: 20px;
+        height: 240px;
+        background-position: left;
+    }
+}
+
+@media (min-width: 393px) and (max-width: 991px) {
+    .fondo-header-index {
+        height: 400px;
+        padding: 60px 0 0 60px;
+    }
+
+    .contenedor_navv {
+        padding: 0 5px !important;
+        /* background-color: rgb(75, 75, 75); */
+    }
+
+    .navbar-brand {
+        color: rgb(0, 0, 0) !important;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
+
+    .titulo span {
+        font-size: 40px;
+    }
+
+    .mensaje_descuento {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 10px) and (max-width: 991px) {
+    .contenedor_navv {
+        background-color: rgb(75, 75, 75) !important;
+    }
+
+    .titulo_destacado h3 {
+        font-size: 20pt;
+        /* display: none; */
+        padding: 0 10px;
+    }
+
+
+    .contenedora_destacados {
+        /* background-color: aqua; */
+        width: 100%;
+        margin: auto;
+        padding: 40px 0 50px 0;
+    }
+
+    .cardcardcard {
+        width: 300px !important;
+        margin: 20px 0;
+    }
+
+    .img_des {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .contenedor_tarjetas {
+        flex-direction: column;
+        padding: 0 !important;
+        /* background-color: red; */
+        min-width: 20px;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 10pt;
+    }
+
+    /* .contenedor_tarjetas{
+        display: flex;
+        min-width:1400px;
+        width: 80%;
+        margin-top: 90px;
+        
+    } */
+}

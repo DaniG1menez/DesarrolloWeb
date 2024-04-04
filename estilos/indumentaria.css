@@ -1,0 +1,110 @@
+body{
+    
+    background-color: rgb(48, 48, 48);
+}
+.CONTENEDOR_CATEGORIAS{
+    /* background-color: RED; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CONTENEDOR_CATEGORIAS H2{
+    font-size: 40pt;
+    margin-top: 50PX;
+    color: rgb(255, 255, 255);
+}
+
+.linea_cate{
+    background-color: rgb(245, 72, 72);
+    height: 6px;
+    width: 1300px;
+    margin-bottom: 20px;
+}
+
+.contenedora_tarjetas{
+    width: 1300px;
+    height: 100vh;
+    margin:0px auto 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    
+}
+
+.cardcard{
+    margin: auto;
+    position: relative;
+    height: 250px ;
+    overflow: hidden;
+}
+
+.imgimg img{
+    height: 250px;
+    object-fit: cover;
+}
+.imgimg2 img{
+    object-fit: cover;
+    position: relative;
+    top: 20px;
+}
+.botonVerMas{
+    background-color: rgb(245, 72, 72);
+    text-decoration: none;
+    color: white;
+    padding:10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;;
+}
+
+.botonVerMas:hover{
+    background-color: rgba(255, 0, 0, 0.473);
+    color: white;
+}
+
+@media only screen and (min-width:100px) and (max-width: 435px) {
+
+        
+    .contenedora_tarjetas{
+        width: 90%;
+        min-width: 330px;
+        margin:0;
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 650px);
+        /* background-color: rgb(212, 127, 0); */
+    }
+
+    .cardcard{
+        width: 70% !important;
+        border: 1px solid black;
+        height: 600px;
+        margin: 20px 0;
+        justify-self: center;
+        align-self: center; 
+    }
+    .imgimg img{
+        height: 250px !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+    .imgimg2 img{
+        top: 0;
+    }
+
+    .CONTENEDOR_CATEGORIAS H2{
+        font-size: 20pt;
+    }
+    .linea_cate{
+        width: 90%;
+    }
+
+
+}
