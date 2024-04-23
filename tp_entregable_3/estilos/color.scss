@@ -1,0 +1,209 @@
+
+@import 'global'; 
+
+
+/* cartel 10% de descuento inicio */
+.fondo-header-index {
+    background-image: url("../assents/accesorios-oversize.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 1000px;
+    padding: 170px 0 0 100px;
+    border-radius: 0px !important;
+    .titulo {
+        font-size: 200px;
+        color: $colorRojo;
+        margin: 0;
+    }
+    .titulo span {
+        font-size: 140px;
+        color: $colorBlancoCrema;
+    }.mensaje_descuento {
+        font-size: 60px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: $colorBlancoCrema;
+    }
+}
+
+
+
+
+/* cartel 10% de descuento fin */
+
+/* tarjetas pendas destacadas inicio */
+
+.contenedora_destacados {
+    background-color: $colorGrisOscuro;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 200px 0;
+
+    .linea_destacados {
+        background-color: $colorRojo;
+        height: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border-radius: 50px;
+
+        .titulo_destacado h3 {
+            font-size: 50pt;
+            background-color:$colorGrisOscuro;
+            text-align: center;
+            padding: 0 30px;
+            color: $colorGrisClaro;
+        }
+    }
+}
+
+
+
+
+
+.contenedor_tarjetas {
+    display: flex;
+    // min-width: 1400px;
+    width: 80%;
+    /* background-color: aqua; */
+    margin-top: 90px;
+    .cardcardcard{
+        background-color: #fff9f9;
+        background-image: linear-gradient(15deg, #000000 0%, #ff4d4d 40%);
+        border: none;
+        border-radius: 15px;
+        .img_des {
+            height: 450px;
+            object-fit: cover;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        .card-body{
+            .card-title{
+                color: $colorBlancoCrema;
+            }
+            .card-text{
+                color: $colorBlancoCrema;
+            }
+            .BOTON_comprar {
+                background-color: $colorRojo;
+                border: none;
+                transition: all 0.3s;
+            }
+            .BOTON_comprar:hover {
+                background-color:rgb(243, 125, 125);
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+
+
+/* tarjetas pendas destacadas fin */
+
+/* inicio media*/
+
+
+
+@media only screen and (max-width: 392px) {
+
+
+
+    .fondo-header-index .titulo {
+        font-size: 50px;
+    }
+
+    .fondo-header-index .titulo span {
+        font-size: 40px;
+    }
+
+    .fondo-header-index .mensaje_descuento {
+        font-size: 10pt;
+    }
+
+    .fondo-header-index {
+        padding: 20px;
+        height: 240px;
+        background-position: left;
+    }
+
+}
+
+@media (min-width: 393px) and (max-width: 991px) {
+    .fondo-header-index {
+        height: 400px;
+        padding: 60px 0 0 60px;
+    }
+
+    .fondo-header-index .titulo {
+        font-size: 50px;
+    }
+
+    .fondo-header-index .titulo span {
+        font-size: 40px;
+    }
+
+    .fondo-header-index .mensaje_descuento {
+        font-size: 10pt;
+    }
+
+}
+
+
+@media (min-width: 10px) and (max-width: 991px) {
+
+    .contenedora_destacados .linea_destacados .titulo_destacado h3  {
+        font-size: 20pt;
+        /* display: none; */
+        padding: 0 10px;
+    }
+
+
+    .contenedora_destacados {
+        /* background-color: aqua; */
+        width: 100%;
+        margin: auto;
+        padding: 40px 0 50px 0;
+    }
+
+    .cardcardcard {
+        width: 300px !important;
+        margin: 20px 0;
+        
+    }
+
+    .contenedor_tarjetas .cardcardcard .img_des{
+        height: 270px;
+        object-fit: cover;
+    }
+
+    .contenedor_tarjetas {
+        flex-direction: column;
+        padding: 0 !important;
+        /* background-color: red; */
+        min-width: 20px;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+
+}
+
+@media (min-width: 991px) and (max-width: 1600px) {
+    .contenedor_tarjetas{
+        // background-color: azure;
+        width: 95%;
+    }
+
+    
+    .contenedor_tarjetas .cardcardcard{
+    background-color: beige;
+    width:300px !important;    
+    }
+}
